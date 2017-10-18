@@ -14,3 +14,12 @@ fs.readFile('input.txt', function(err, data1) {
     console.log(data1.toString());
 })
 console.log("message2: done!");
+console.log("======================")
+var data2 = "Hello, Node.js";
+fs.writeFile('output.txt', data2, function(err) {
+    if (err) {
+        console.log(err);
+    } else {
+        console.log("message3: done!");
+    }
+})
