@@ -9,7 +9,7 @@ var data = fs.readFileSync('input.txt');
 console.log(data.toString());
 console.log("message1: done!");
 console.log("======================")
-fs.readFile('input.txt', function(err, data1) {
+fs.readFile('input.text', function(err, data1) {
     if (err) return console.error(err);
     console.log(data1.toString());
 })
